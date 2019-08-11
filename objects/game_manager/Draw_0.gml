@@ -1,0 +1,5 @@
+draw_set_color(c_black)
+draw_set_font(font0)
+draw_text(200,100,t/60)
+draw_text(200,200,state)
+draw_text(200,300,round_num)
