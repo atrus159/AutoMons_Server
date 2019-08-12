@@ -4,13 +4,23 @@ switch(messageId){
 	case 10: // player send pokemon
 		while(buffer_tell(buffer)<buffer_get_size(buffer)){
 			var type = buffer_read(buffer,buffer_u8)
-			var pokeType = noone
-			if(type == 111){
-				pokeType = pokemon
-			}
+			var typeIndex = ds_list_find_value(global.pokeLookup,type)
+			var pokeType = asset_get_index(typeIndex)
 			var pX = buffer_read(buffer,buffer_u8)
 			var pY = buffer_read(buffer,buffer_u8)
-			instance_create_depth(pX*50,pY*50,0,pokeType)
+			var relX = 10*pX+board.x
+			var relY = 10*pY+board.y+40
+			if(color){
+				var relX = 10*(7-pX)+board.x
+				var relY = 10*(3-pY)+board.y
+			}
+			var piece = instance_create_depth(relX,relY,0,pokeType)
+			piece.color = color
+			piece.opponent = opponent
+			piece.board = board
+			piece.owner = id
+			piece.pieceId = global.pieceId
+			global.pieceId++
 		}
 	break;
 }

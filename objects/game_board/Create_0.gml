@@ -1,0 +1,2 @@
+redPlayer = noone
+bluePlayer = noone
