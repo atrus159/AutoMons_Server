@@ -1,17 +1,34 @@
 var typeEvent = async_load[? "type"]
 switch(typeEvent){
 	case network_type_connect:
-		ds_list_add(sockets,async_load[? "socket"])
+		var newPlayer = instance_create_depth(0,0,0,player)
+		newPlayer.socket = async_load[? "socket"]
+		ds_list_add(players,newPlayer)
 	break
 	case network_type_disconnect:
-		var disconnected = ds_list_find_index(sockets, async_load[? "socket"])
-		if(disconnected != undefined){
-		ds_list_delete(sockets, disconnected)
+		var dcSocket = async_load[? "socket"]
+		for(var i = 0; i<ds_list_size(players); i++){
+			var dcPlayer = ds_list_find_value(players,i)
+			if(dcPlayer.socket == dcSocket){
+				ds_list_delete(players,i)
+				instance_destroy(dcPlayer)
+				break;
+			}
 		}
 	break;
 	case network_type_data:
 	var buffer = async_load[? "buffer"]
 	buffer_seek(buffer, buffer_seek_start,0)
-	handle_packet(buffer)
+	var buffSocket = async_load[? "id"]
+	for(var i = 0; i<ds_list_size(players); i++){
+		var buffPlayer = ds_list_find_value(players,i)
+		if(buffPlayer.socket == buffSocket){
+			with(buffPlayer){
+				handle_packet(buffer)
+			}
+			break;
+			
+		}
+	}
 	break;
 }

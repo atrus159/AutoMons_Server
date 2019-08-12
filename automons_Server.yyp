@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "91bc85cc-d9c6-4495-9e71-51ccd9ecc771",
+            "Value": {
+                "id": "69f32bb2-8753-4797-a7e2-c5c4c77a08ea",
+                "resourcePath": "objects\\pokemon\\pokemon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "94381854-d655-421a-b2ca-ec1fe59e2faa",
             "Value": {
                 "id": "6d077230-0c37-49fa-85cd-c1be0307c8d3",
@@ -180,6 +188,14 @@
                 "id": "b9062975-412f-4bfb-b925-b6ba2c828769",
                 "resourcePath": "views\\a0013815-7061-4d80-892a-4339703ada90.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a84a0314-efb4-49cc-8bb1-42315800229c",
+            "Value": {
+                "id": "39a8cb05-b124-4342-bdef-4a0ca46db760",
+                "resourcePath": "objects\\player\\player.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -212,6 +228,14 @@
                 "id": "8b4df5e9-19bd-4685-8ef0-1d9c18149d30",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "bddf20ec-d9ef-44d2-b76e-40db9db344dd",
+            "Value": {
+                "id": "6e1cbb61-ee5e-4005-a6fd-01932f7e132a",
+                "resourcePath": "sprites\\sprite1\\sprite1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
