@@ -23,4 +23,14 @@ switch(messageId){
 			global.pieceId++
 		}
 	break;
+	case 11: //player update name
+		name = buffer_read(buffer,buffer_string)
+		with(player){
+			buffer_seek(send_buffer,buffer_seek_start,0)
+			buffer_write(send_buffer, buffer_u8,4) // server new player name
+			buffer_write(send_buffer,buffer_u8,other.playerId)
+			buffer_write(send_buffer,buffer_string,other.name)
+			network_send_packet(socket,send_buffer,buffer_tell(send_buffer))
+		}
+	break;
 }

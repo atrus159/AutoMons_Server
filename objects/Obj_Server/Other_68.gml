@@ -4,6 +4,7 @@ switch(typeEvent){
 		var newPlayer = instance_create_depth(0,0,0,player)
 		newPlayer.socket = async_load[? "socket"]
 		ds_list_add(players,newPlayer)
+		playerIdCount ++
 	break
 	case network_type_disconnect:
 		var dcSocket = async_load[? "socket"]

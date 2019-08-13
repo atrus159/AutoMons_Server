@@ -1,11 +1,11 @@
 randomize()
 var boardIndex = 0
 ds_list_shuffle(Obj_Server.players)
-for(var i = 0; i<global.playerCount-1; i+=2){
+for(var i = 0; i<Obj_Server.playerCount-1; i+=2){
 	with(ds_list_find_value(Obj_Server.players,i)){
 			board = ds_list_find_value(other.game_boards,boardIndex)
 			color = false
-			if(i+1 <global.playerCount){
+			if(i+1 <Obj_Server.playerCount){
 			opponent = ds_list_find_value(Obj_Server.players,i+1)
 			opponent.opponent = id
 			opponent.color = true
@@ -18,7 +18,7 @@ for(var i = 0; i<global.playerCount-1; i+=2){
 
 	}
 }
-if(global.playerCount == 1){
+if(Obj_Server.playerCount == 1){
 	with(ds_list_find_value(Obj_Server.players,0)){
 			board = ds_list_find_value(other.game_boards,0)
 			color = false
