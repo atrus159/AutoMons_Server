@@ -1,3 +1,4 @@
+if(owner != noone){
 with(owner){
 buffer_seek(send_buffer,buffer_seek_start,0)
 buffer_write(send_buffer, buffer_u8,2) //ally piece message
@@ -17,6 +18,7 @@ buffer_write(send_buffer,buffer_u8,type_index)
 var sendFacing = other.facing
 buffer_write(send_buffer,buffer_u8,sendFacing)
 network_send_packet(socket,send_buffer,buffer_tell(send_buffer))
+}
 }
 if(opponent!=noone){
 with(opponent){

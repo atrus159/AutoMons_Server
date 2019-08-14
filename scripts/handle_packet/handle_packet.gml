@@ -11,8 +11,8 @@ switch(messageId){
 			var relX = 10*pX+board.x
 			var relY = 10*pY+board.y+40
 			if(color){
-				var relX = 10*(7-pX)+board.x
-				var relY = 10*(3-pY)+board.y
+				relX = 10*(7-pX)+board.x
+				relY = 10*(3-pY)+board.y
 			}
 			var piece = instance_create_depth(relX,relY,0,pokeType)
 			piece.color = color
@@ -21,6 +21,17 @@ switch(messageId){
 			piece.owner = id
 			piece.pieceId = global.pieceId
 			global.pieceId++
+			if(sendTo != noone){
+				relX = 10*(7-pX)+sendTo.board.x
+				relY = 10*(3-pY)+sendTo.board.y
+				piece = instance_create_depth(relX,relY,0,pokeType)
+				piece.color = true
+				piece.opponent = sendTo
+				piece.board = sendTo.board
+				piece.owner = noone
+				piece.pieceId = global.pieceId
+				global.pieceId++
+			}
 		}
 	break;
 	case 11: //player update name
