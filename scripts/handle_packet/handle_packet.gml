@@ -44,4 +44,25 @@ switch(messageId){
 			network_send_packet(socket,send_buffer,buffer_tell(send_buffer))
 		}
 	break;
+	case 12: //player reroll request
+		if(money>=2 || freeReroll){
+			if(freeReroll){
+				freeReroll = 0	
+			}else{
+				money -=2	
+			}
+			get_shop_contents(shopContents,level)
+		}
+	break;
+	case 13: //player buy request
+		var pokeBuy = buffer_read(buffer,buffer_u8)
+		var pokeType = ds_list_find_value(global.pokeLookup,pokeBuy)
+		var localIndex = ds_list_find_index(shopContents,pokeType)
+		var canBuy = (money>0)
+		if(localIndex != -1 && canBuy){
+			money -= 1
+			ds_list_add(myPurchased,pokeType)
+			ds_list_delete(shopContents,localIndex)
+		}
+	break;
 }

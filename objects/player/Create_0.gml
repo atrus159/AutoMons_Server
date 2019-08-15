@@ -12,3 +12,6 @@ sendTo = noone
 reciveFrom = noone
 level = 1
 money = 1
+shopContents = ds_list_create()
+freeReroll = 1
+myPurchased = ds_list_create()

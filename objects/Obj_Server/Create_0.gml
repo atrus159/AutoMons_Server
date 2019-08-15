@@ -5,3 +5,4 @@ players = ds_list_create()
 playerCount = 0
 playerIdCount = 0
 count_down_timer = 60
+global.shopSize = 5
