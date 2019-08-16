@@ -1,6 +1,6 @@
-game_time = 60*20
-shop_time = 60*30
-wait_time = 60*5
+game_time = 60*7//60*20
+shop_time = 60*10//60*30
+wait_time = 60*2//60*5
 t = 0
 round_num = 1
 state = 0

@@ -65,4 +65,11 @@ switch(messageId){
 			ds_list_delete(shopContents,localIndex)
 		}
 	break;
+	case 14: //player xp request
+		if(money>=5 && level<10){
+			money -=5	
+			xp +=4
+			handle_level()
+		}
+	break;
 }
