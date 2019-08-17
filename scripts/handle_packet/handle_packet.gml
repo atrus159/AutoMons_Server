@@ -58,9 +58,10 @@ switch(messageId){
 		var pokeBuy = buffer_read(buffer,buffer_u8)
 		var pokeType = ds_list_find_value(global.pokeLookup,pokeBuy)
 		var localIndex = ds_list_find_index(shopContents,pokeType)
-		var canBuy = (money>0)
+		var compArray = ds_map_find_value(global.componentLookup,pokeType)
+		var canBuy = (money>=compArray[2])
 		if(localIndex != -1 && canBuy){
-			money -= 1
+			money -= compArray[2]
 			ds_list_add(myPurchased,pokeType)
 			ds_list_delete(shopContents,localIndex)
 		}
@@ -71,5 +72,30 @@ switch(messageId){
 			xp +=4
 			handle_level()
 		}
+	break;
+	case 15: //player sell request
+		var pokeId = buffer_read(buffer,buffer_u8)
+		var pokeName = ds_list_find_value(global.pokeLookup,pokeId)
+		var compArray = ds_map_find_value(global.componentLookup,pokeName)
+		var count = 0
+		for(var i = 0; i<compArray[1];i++){
+			var index = ds_list_find_index(myPurchased,compArray[0])
+			if(index != -1){
+				ds_list_delete(myPurchased,index)
+				count ++
+			}
+		}
+		if(count == compArray[1]){
+			money += count*compArray[2]
+			for(var i = 0; i<count; i++){
+				ds_list_add(global.draftBucket[compArray[2]-1],compArray[0])	
+			}
+		}else{
+			for(var i = 0; i<count; i++){
+				ds_list_add(myPurchased,compArray[0])	
+			}
+		}
+
+	
 	break;
 }
