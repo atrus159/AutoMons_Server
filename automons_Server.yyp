@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0111e751-48fa-4efa-89c6-d35f7652718a",
+            "Value": {
+                "id": "321f2c84-24e5-454a-a499-4aeda7775b8f",
+                "resourcePath": "scripts\\handle_winLoss\\handle_winLoss.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0146a7b9-c63e-4ff8-bef6-c5f48476b6fd",
             "Value": {
                 "id": "8839596c-e015-4a5f-8937-79c99f8bb099",
@@ -551,7 +559,8 @@
         "0268b799-5428-41cb-8528-ceb13b84d317",
         "e8d52b46-cbd3-451e-8b38-2e86ee68e0a0",
         "a31b3c68-6d36-498f-b4d7-dd5f10f75b01",
-        "2813a164-1080-4e0d-8e5a-5d9e7f5b6010"
+        "2813a164-1080-4e0d-8e5a-5d9e7f5b6010",
+        "0111e751-48fa-4efa-89c6-d35f7652718a"
     ],
     "tutorial": ""
 }

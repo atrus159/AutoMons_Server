@@ -18,6 +18,15 @@ switch(state){
 	break;
 	case 2:
 	exportT = round((game_time-t)/60)
+	var roundDecided = 1
+	with(game_board){
+		if(bluePlayer != noone && !decided){
+			roundDecided = 0	
+		}
+	}
+	if(roundDecided){
+		t = game_time	
+	}
 	if(t>=game_time){
 		start_shop_phase()
 		t = 0

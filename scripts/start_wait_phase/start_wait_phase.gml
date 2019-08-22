@@ -10,6 +10,7 @@ for(var i = 0; i<Obj_Server.playerCount; i+=2){
 			opponent.opponent = id
 			opponent.color = true
 			opponent.board = board
+			board.redPlayer = opponent
 			}else{
 			opponent = noone
 			var fakeOp = ds_list_find_value(Obj_Server.players,0)
@@ -19,7 +20,7 @@ for(var i = 0; i<Obj_Server.playerCount; i+=2){
 			reciveFrom = fakeOp
 			fakeOp.sendTo = id
 			}
-			
+			board.bluePlayer = id
 			boardIndex ++
 
 	}
