@@ -37,7 +37,7 @@ if(!redAlive && !blueAlive){
 	if(redPlayer != noone){
 	redPlayer.won = 1
 	}
-	bluePlayer.won = 1
+	bluePlayer.won = 0
 	decided = 1
 }
 ds_list_destroy(monList)

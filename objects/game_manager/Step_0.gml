@@ -28,10 +28,10 @@ switch(state){
 		t = game_time	
 	}
 	if(t>=game_time){
-		start_shop_phase()
 		t = 0
 		state = 0
 		round_num ++
+		start_shop_phase()
 	}
 	break;
 	

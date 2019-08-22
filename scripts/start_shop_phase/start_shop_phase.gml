@@ -23,7 +23,7 @@ with(player){
 	if(money>=50){
 		intrest ++	
 	}
-	var baseGold = level
+	var baseGold = game_manager.round_num
 	if(baseGold>5){
 		baseGold = 5	
 	}

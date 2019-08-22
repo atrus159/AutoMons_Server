@@ -19,5 +19,5 @@ xp = 0
 won = -1
 winStreak = 0
 loseStreak = 0
-maxWin = 5
-maxLose = 2
+maxWin = 6
+maxLose = 3
