@@ -4,7 +4,7 @@ if(!decided && game_manager.state == 2 && bluePlayer != noone){
 var monList = ds_list_create()
 var n = 0
 with(pokemon){
-	if(point_in_rectangle(x,y,other.x-5,other.y-5,other.x+75,other.y+75)){
+	if(point_in_rectangle(x,y,other.x-20,other.y-20,other.x+300,other.y+300)){
 		ds_list_add(monList,id)
 		n++
 	}

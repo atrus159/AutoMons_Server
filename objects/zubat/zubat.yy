@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "zubat",
     "eventList": [
-        
+        {
+            "id": "e9af1b5e-e6fa-4228-a5c5-119efa11180a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "f103891a-9fd7-4e8b-b304-f9d78c74a582"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

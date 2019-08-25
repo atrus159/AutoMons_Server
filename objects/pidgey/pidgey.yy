@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "pidgey",
     "eventList": [
-        
+        {
+            "id": "4cf946e1-6a26-4e9e-9507-2fd93b830616",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "b7d50913-a0dd-465a-b36c-76bb515e41e6"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

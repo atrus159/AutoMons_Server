@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "golbat",
     "eventList": [
-        
+        {
+            "id": "d3665cf6-a05f-40bc-8bc4-a5992daa594e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "4a495e4a-bc81-4878-b3f5-35201034a41f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -8,11 +8,11 @@ switch(messageId){
 			var pokeType = asset_get_index(typeIndex)
 			var pX = buffer_read(buffer,buffer_u8)
 			var pY = buffer_read(buffer,buffer_u8)
-			var relX = 10*pX+board.x
-			var relY = 10*pY+board.y+40
+			var relX = 40*pX+board.x
+			var relY = 40*pY+board.y+160
 			if(color){
-				relX = 10*(7-pX)+board.x
-				relY = 10*(3-pY)+board.y
+				relX = 40*(7-pX)+board.x
+				relY = 40*(3-pY)+board.y
 			}
 			var piece = instance_create_depth(relX,relY,0,pokeType)
 			piece.color = color
@@ -22,8 +22,8 @@ switch(messageId){
 			piece.pieceId = global.pieceId
 			global.pieceId++
 			if(sendTo != noone){
-				relX = 10*(7-pX)+sendTo.board.x
-				relY = 10*(3-pY)+sendTo.board.y
+				relX = 40*(7-pX)+sendTo.board.x
+				relY = 40*(3-pY)+sendTo.board.y
 				piece = instance_create_depth(relX,relY,0,pokeType)
 				piece.color = true
 				piece.opponent = sendTo

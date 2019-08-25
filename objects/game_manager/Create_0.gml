@@ -7,7 +7,7 @@ state = 0
 exportT = 0
 game_boards = ds_list_create()
 for(var i = 0; i<floor((Obj_Server.maxClients)/2); i++){
-	var newBoard = instance_create_depth(300+(i mod 4)*100,300 + floor(i/4)*100, 1, game_board)
+	var newBoard = instance_create_depth(200+(i mod 4)*400,200 + floor(i/4)*400, 1, game_board)
 	ds_list_add(game_boards,newBoard)
 }
 global.pieceId = 0

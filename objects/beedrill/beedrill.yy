@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "beedrill",
     "eventList": [
-        
+        {
+            "id": "27cbe720-8a1e-4919-9e87-65e87e2d58d8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "033813a8-ccbb-49e9-83cd-2e1f7cf6ebf6"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
