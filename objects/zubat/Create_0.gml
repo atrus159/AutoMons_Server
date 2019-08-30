@@ -1,2 +1,2 @@
 event_inherited()
-range = 14*2
+range = 24

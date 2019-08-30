@@ -10,6 +10,7 @@ if(game_manager.state == 2){
 		}
 	}
 	}
+	if(target != noone){
 	if(point_distance(x,y,claimX,claimY)>=5){
 		move_towards_point(claimX,claimY,1)
 		set_facing()
@@ -44,4 +45,5 @@ if(game_manager.state == 2){
 		claimY = dest[1]*40+board.y
 	}
 	}
+}
 }

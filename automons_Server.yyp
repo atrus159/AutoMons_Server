@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0c4349f8-716e-4d0b-b3e7-2a9ea9272bda",
+            "Value": {
+                "id": "1b304dc8-7136-43de-8535-19c17135c4d4",
+                "resourcePath": "objects\\bellsprout\\bellsprout.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0c542070-6cf3-47d4-8819-61fef1d22673",
             "Value": {
                 "id": "247fbbbb-7c01-4705-894c-9867dd8ed8e9",
@@ -252,6 +260,22 @@
                 "id": "35b1a2f3-74e6-48c0-9755-e7b3a56d2d63",
                 "resourcePath": "views\\56da57e5-55ae-4e96-98fb-133d1a2a2c2f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5c166b1c-f8ad-4040-ace4-5e58046b6e86",
+            "Value": {
+                "id": "6e5330ed-950f-4d98-ad0b-1ceebdfca069",
+                "resourcePath": "objects\\victreebel\\victreebel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5f94424d-4cae-4c61-9b7c-11f1c4560fd3",
+            "Value": {
+                "id": "7044f404-312e-4453-986a-df102dfc1b1b",
+                "resourcePath": "objects\\weepinbell\\weepinbell.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -423,6 +447,14 @@
             }
         },
         {
+            "Key": "b4debcf2-783d-41ed-8002-1d3c7bbe22b7",
+            "Value": {
+                "id": "ebec6d45-3fa8-4785-a37a-a15c688e8a0e",
+                "resourcePath": "objects\\swinub\\swinub.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b50fcaa0-60a8-492a-b267-5bf2ba1de443",
             "Value": {
                 "id": "1ecc0ebc-e96a-4bb5-b08b-37c941025354",
@@ -455,10 +487,26 @@
             }
         },
         {
+            "Key": "bf2129c5-b5b8-4f76-9522-51390b4e7376",
+            "Value": {
+                "id": "21d5e125-a2a1-4d7a-8b48-dcac44a65108",
+                "resourcePath": "views\\bf2129c5-b5b8-4f76-9522-51390b4e7376.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c0ba99b5-3d9c-44a7-9ffd-3caca0143a3f",
             "Value": {
                 "id": "69ec4f65-cbbc-41a7-afb4-3cb4e82bb21b",
                 "resourcePath": "views\\c0ba99b5-3d9c-44a7-9ffd-3caca0143a3f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c63651ef-ee07-43ce-afe1-a0ed1c83452b",
+            "Value": {
+                "id": "d1cd910b-f980-4332-9862-e86051382c97",
+                "resourcePath": "views\\c63651ef-ee07-43ce-afe1-a0ed1c83452b.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -508,6 +556,14 @@
                 "id": "fe28f444-9616-424a-99c3-35b5c6117b5d",
                 "resourcePath": "views\\dfe02062-26fa-40bd-ab40-4a7e3cbd054a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e2730404-d668-415a-8852-f6d25edea169",
+            "Value": {
+                "id": "68c82396-9e5a-450e-b8ba-3c310bf59dc3",
+                "resourcePath": "objects\\piloswine\\piloswine.yy",
+                "resourceType": "GMObject"
             }
         },
         {
