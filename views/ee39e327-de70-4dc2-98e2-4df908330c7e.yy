@@ -11,7 +11,17 @@
         "e7bcba05-d330-437e-a820-a5f84130d3d9",
         "0c542070-6cf3-47d4-8819-61fef1d22673",
         "bf2129c5-b5b8-4f76-9522-51390b4e7376",
-        "c63651ef-ee07-43ce-afe1-a0ed1c83452b"
+        "c63651ef-ee07-43ce-afe1-a0ed1c83452b",
+        "c7a493f1-3128-4205-86a4-ae2ed0a3ecd2",
+        "c72cef4e-9c9c-42cf-9cf5-ee436a0a2f99",
+        "6f10b348-5279-4897-ab3c-c34bbc55e5c7",
+        "12518995-8dc2-43b8-b33b-907fa3ae1dcd",
+        "f2d29363-bfbd-45a5-85b2-13a921353d17",
+        "99789b23-06ad-4110-a7a4-ee740a7c5c0a",
+        "94f51ffa-2496-4dac-8074-28ce1ca9de2b",
+        "3fe59ee4-4c06-47fc-938d-d31a123eb76d",
+        "9969fe1d-5f27-4505-a772-3529a9a0fdef",
+        "5f0fce6d-5e01-4ff8-95b7-b3089100e4bf"
     ],
     "filterType": "GMObject",
     "folderName": "pokemon",
